@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.riashad.crossword.tipcalculator.MainActivity"
+    android:weightSum="1">
+
+    /**
+    *  Bill Amount
+    */
+    <TextView
+        android:id="@+id/BillAmntTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bill Amount: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="24dp" />
+
+    <EditText
+        android:id="@+id/BillAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Bill Amount"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_alignBaseline="@+id/BillAmntTextView"
+        android:layout_alignBottom="@+id/BillAmntTextView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="22dp"
+        android:layout_marginEnd="22dp" />
+
+    /**
+    *  Tip Amount in %
+    */
+    <TextView
+        android:id="@+id/TipPerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tip ( %): "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@+id/TipPercent"
+        android:layout_alignBottom="@+id/TipPercent"
+        android:layout_alignLeft="@+id/BillAmntTextView"
+        android:layout_alignStart="@+id/BillAmntTextView" />
+
+
+    <EditText
+        android:id="@+id/TipPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Value in %"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_below="@+id/BillAmount"
+        android:layout_alignLeft="@+id/BillAmount"
+        android:layout_alignStart="@+id/BillAmount" />
+
+    /**
+    *  Divider - Heading
+    */
+
+    <TextView
+        android:id="@+id/CalcBilltextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/TipPercent"
+        android:layout_marginTop="53dp"
+        android:background="@color/colorPrimary"
+        android:text="Calculated Bills"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    /**
+    * Display Output
+    */
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:text="Result Will Be Displayed Here !"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/CalcBilltextView"
+        android:layout_alignLeft="@+id/TipPerTextView"
+        android:layout_alignStart="@+id/TipPerTextView"
+        android:layout_alignRight="@+id/TipPercent"
+        android:layout_alignEnd="@+id/TipPercent" />
+
+    /**
+    *  Build By Author
+    */
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="By Riashad Noor"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+
+</RelativeLayout>
